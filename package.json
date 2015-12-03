@@ -3,7 +3,7 @@
   "description": "Doxygen language support for Visual Studio Code",
   "version": "0.0.2",
   "publisher": "bbenoist",
-  "icon": "icon.png",
+  "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#244FA7",
     "theme": "dark"
