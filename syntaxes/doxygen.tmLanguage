@@ -12,7 +12,7 @@
   <array>
     <dict>
       <key>begin</key>
-      <string>(^\@(code|cond|dot|htmlonly|if|internal|latexonly|link|manonly|msc|rtfonly|verbatim|xmlonly))</string>
+      <string>([\\\@](code|cond|dot|htmlonly|if|internal|latexonly|link|manonly|msc|rtfonly|verbatim|xmlonly))</string>
       <key>beginCaptures</key>
       <dict>
         <key>0</key>
@@ -22,44 +22,7 @@
         </dict>
       </dict>
       <key>end</key>
-      <string>(^\@end[A-Za-z]+)</string>
-      <key>endCaptures</key>
-      <dict>
-        <key>1</key>
-        <dict>
-          <key>name</key>
-          <string>keyword.source.doxygen</string>
-        </dict>
-      </dict>
-      <key>name</key>
-      <string>string.source.doxygen</string>
-      <key>patterns</key>
-      <array>
-        <dict>
-          <key>include</key>
-          <string>$self</string>
-        </dict>
-        <dict>
-          <key>match</key>
-          <string>.</string>
-          <key>name</key>
-          <string>string.doxygen</string>
-        </dict>
-      </array>
-    </dict>
-    <dict>
-      <key>begin</key>
-      <string>(^\\(code|cond|dot|htmlonly|if|internal|latexonly|link|manonly|msc|rtfonly|verbatim|xmlonly))</string>
-      <key>beginCaptures</key>
-      <dict>
-        <key>0</key>
-        <dict>
-          <key>name</key>
-          <string>keyword.source.doxygen</string>
-        </dict>
-      </dict>
-      <key>end</key>
-      <string>(^\\end[A-Za-z]+)</string>
+      <string>([\\\@]end[A-Za-z]+)</string>
       <key>endCaptures</key>
       <dict>
         <key>1</key>
@@ -88,15 +51,7 @@
       <key>comment</key>
       <string>Keyword for doxygen</string>
       <key>match</key>
-      <string>^\@[A-Za-z]+</string>
-      <key>name</key>
-      <string>keyword.source.doxygen</string>
-    </dict>
-    <dict>
-      <key>comment</key>
-      <string>Keyword for doxygen</string>
-      <key>match</key>
-      <string>^\\[A-Za-z]+</string>
+      <string>[\\\@][A-Za-z]+</string>
       <key>name</key>
       <string>keyword.source.doxygen</string>
     </dict>
